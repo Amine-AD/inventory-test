@@ -15,8 +15,10 @@ Before running the application, ensuring you have the following installed:
     Open your terminal in the project directory and run:
 
     ```bash
-    npm install
+    npm install --legacy-peer-deps
     ```
+
+    > **Note:** We use the `--legacy-peer-deps` flag because Shopify Polaris currently lists React 18 as a peer dependency, but this project uses React 19. This flag allows the installation to proceed despite the version mismatch.
 
 2.  **Start the Development Server**
     Run the following command to start the app in development mode:
